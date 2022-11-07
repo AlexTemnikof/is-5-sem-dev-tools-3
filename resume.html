@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title class="head__title">Шречье резюме</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/resume.css">
+    <!-- You need a yandex api key to use this feature -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YourApiKeyc0e529d5ee20c57ad8ee04c296&lang=ru_RU&load=Geolink"
+            type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script defer src="scripts/buttons.js"></script>
+    <script defer src="scripts/pop-up-starting-window.js"></script>
+    <script defer src="scripts/pages.js"></script>
+    <script defer src="scripts/active_button.js"></script>
+</head>
+<body class="page body_visible">
+    <header class="header">
+        <div class="menu">
+            <button class="menu-button__home" onclick="home()">Home</button>
+            <button class="menu-button__friends" onclick="friends()">My friends</button>
+            <button class="menu-button__cinema" onclick="cinema()">Me in Hollywood</button>
+            <button class="menu-button__memes" onclick="memes()">Memes about me</button>
+        </div>
+        <div class="header-title">Резюме разработчика</div>
+    </header>
+    <div class="pop-up-window">
+        <span class="pop-up-window__question">Вы любите шрека?</span>
+        <button class="pop-up-window__yes" onclick=ShrekLove_yes()>Да</button>
+        <button class="pop-up-window__no" onclick=ShrekLove_not()>Нет</button>
+    </div>
+    <main>
+        <img class="main-image" src="/images/shrek.jpg">
+        <section class="main-info">
+            <span class="main-info__title">Основная информация:</span>
+            <div class="main-info__list">
+                <ul>
+                    <li><span class="main-info__list__header">ФИО:</span> Огров Шрек Шрекович</li>
+                    <li><span class="main-info__list__header">Дата рождения:</span> 14.11.1907</li>
+                    <li><span class="main-info__list__header">Знак зодиака:</span> Скорпион</li>
+                    <li><span class="main-info__list__header">Место рождения:</span> Бруклин, США</li>
+                </ul>
+            </div>
+        </section>
+        <pre class="main-ascii">
+
+ ⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆
+⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿
+⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀
+⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀
+         ⠉⠛⠻⠿⠿⠿⠿⠛⠉
+        </pre>
+        <article class="main-background">
+            <span class="main-background__title">Мой бэкграунд:</span> <br>
+            Большую часть своей жизни я провел на болоте в одиночестве, соответсвенно у меня было большое количество<br>
+            времени, которое я мог уделять разного вида хобби. В частности, я всей душой полюбил <span class="main-background__crucial">программирование,</span><br>
+            в котором решил усердно совершенствоваться. Таким образом, я считаю, что у меня удалось достичь некоторых<br>
+            успехов в этом деле.
+        </article>
+        <section class="main-skills">За все время, что я провел на болоте я освоил некоторые языки программирования, такие как:
+            <div class="main-skills__list">
+                <ol type="a">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                </ol>
+            </div>
+        </section>
+        <table class="main-table">
+            <thead>
+            <tr>
+                <th>Болото</th>
+                <th>Болото</th>
+                <th>Болото</th>
+                <th>Болото</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Болото</td>
+                <td>Болото</td>
+                <td>Болото</td>
+                <td>Болото</td>
+            </tr>
+            <tr>
+                <td>Болото</td>
+                <td>Болото</td>
+                <td>Болото</td>
+                <td>Болото</td>
+            </tr>
+            <tr>
+                <td>Болото</td>
+                <td>Болото</td>
+                <td>Болото</td>
+                <td>Болото</td>
+            </tr>
+            </tbody>
+        </table>
+        <aside class="main-algorithm">
+            <span class="main-algorithm__title">Мой любимый алгоритм:</span>
+            <pre><code>
+for (int i = 0; i < myArray.length; i++) {
+    counter = i + 1;
+    for (int j = 1; j < (myArray.length - i); j++) {
+
+        if (myArray[j - 1] > myArray[j]) {
+            //  swap array’s elements using temporary element
+            temp = myArray[j - 1];
+            myArray[j - 1] = myArray[j];
+            myArray[j] = temp;
+        }
+    }
+}
+            </code></pre>
+            <p></p>
+        </aside>
+        <section class="main-quote">
+            <span class="main-quote__title">Любимое изречение:</span> <br>
+            <div class="main-quote__quote">Где бы ты ни был, кем бы ты ни стал, всегда помни где ты и кем ты стал.</div>
+            <div class="main-quote__author">Шрек Шрекович</div>
+        </section>
+        <aside class="main-joke">
+            <span class="main-joke__title">Любимый анекдот</span> <br>
+            Возвращается дракон домой, жена ему говорит: "Дыхни."<br>
+            <span class="main-joke__crucial">Глупая смерть.</span>
+        </aside>
+    </main>
+    <footer>
+        <aside class="footer-resources">
+            <span class="footer-resources__title">Ссылки на ресурсы:</span>
+                <div class="footer-resources__list">
+                    <ul>
+                        <li><a href="https://github.com/AlexTemnikof" target="_blank">GitHub</a></li>
+                        <li><a href="https://vk.com/olekseytem" target="_blank">Вк</a></li>
+                        <li><a href="https://t.me/olekseytem" target="_blank">Телеграм</a></li>
+                    </ul>
+                </div>
+        </aside>
+        <div class="footer-contact-info">
+            <span class="footer-contact-info__title"> Контактная информация: </span>
+                <div class="footer-contact-info__list">
+                    <ul>
+                        <li><a href="tel: +89021212191>"> Мой телефон</a></li>
+                        <li>Моя почта: <a href="mailto: shrekOgr1907@gmail.com"> shrekOgr1907@gmail.com</a></li>
+                        <li><span class="ymaps-geolink" data-type="geo">Санкт-Петербург, Вяземский переулок, 5-7</span></li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+.cinema{
+    background: url("../images/shrek-background.jpg") fixed;
+    background-size: cover;
+    font-size: 1.05rem;
+    font-family: Manrope, serif;
+    color: black;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_hide {
+    opacity: 0;
+    transition: .9s opacity ease-in-out;
+}
+.body_visible {
+    opacity: 1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgb(123,132,121, 0.9);
+    margin-left: -1%;
+    width: 101%;
+    height: 4vh;
+    padding: 1%;
+}
+
+.menu-button__home{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__friends{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__cinema{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__memes{
+    background: rgb(87,103,102, 0.65);
+}
+
+.cinema-header{
+    font-size: 2rem;
+    margin-top: 10vh;
+}
+
+.main-first-film{
+    margin-top: 5vh;
+}
+
+.main-first-film__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 40%;
+    padding: 1%;
+}
+
+.main-first-film__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.main-first-film__text{
+    background: rgb(123,132,121, 0.6);
+    width: 35%;
+    margin-left: 32%;
+    padding: 1%;
+}
+
+.main-second-film{
+    margin-top: 10vh;
+}
+
+.main-second-film__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 40%;
+    padding: 1%;
+}
+
+.main-second-film__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.main-second-film__text{
+    background: rgb(123,132,121, 0.6);
+    width: 35%;
+    margin-left: 32%;
+    padding: 1%;
+}
+
+.main-third-film{
+    margin-top: 10vh;
+}
+
+.main-third-film__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 40%;
+    padding: 1%;
+}
+
+.main-third-film__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.main-third-film__text{
+    background: rgb(123,132,121, 0.6);
+    width: 35%;
+    margin-left: 32%;
+    padding: 1%;
+}
+
+.main-fourth-film{
+    margin-top: 10vh;
+}
+
+.main-fourth-film__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 40%;
+    padding: 1%;
+}
+
+.main-fourth-film__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.main-fourth-film__text{
+    background: rgb(123,132,121, 0.6);
+    width: 35%;
+    margin-left: 32%;
+    padding: 1%;
+    margin-bottom: 10vh;
+}

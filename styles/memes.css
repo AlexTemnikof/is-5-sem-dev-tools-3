@@ -1,0 +1,124 @@
+.memes{
+    background: url("../images/shrek-background.jpg") fixed;
+    background-size: cover;
+    font-size: 1.05rem;
+    font-family: Manrope, serif;
+    color: black;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_hide {
+    opacity: 0;
+    transition: .9s opacity ease-in-out;
+}
+.body_visible {
+    opacity: 1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgb(123,132,121, 0.9);
+    margin-left: -1%;
+    width: 101%;
+    height: 4vh;
+    padding: 1%;
+}
+
+.menu-button__home{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__friends{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__cinema{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__memes{
+    background: rgb(87,103,102, 0.65);
+}
+
+.header-memes{
+    font-size: 2rem;
+    margin-top: 10vh;
+    align-self: center;
+}
+
+.main-first-meme{
+    margin-top: 5vh;
+}
+
+.main-first-meme__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 42%;
+    padding: 1%;
+}
+
+.main-first-meme__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.main-second-meme{
+    margin-top: 9vh;
+}
+
+.main-second-meme__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 42%;
+    padding: 1%;
+}
+
+.main-second-meme__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.main-third-meme{
+    margin-top: 9vh;
+}
+
+.main-third-meme__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 42%;
+    padding: 1%;
+}
+
+.main-third-meme__img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+

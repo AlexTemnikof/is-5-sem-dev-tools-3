@@ -1,0 +1,150 @@
+.friends{
+    background: url("../images/shrek-background.jpg") fixed;
+    background-size: cover;
+    font-size: 1.05rem;
+    font-family: Manrope, serif;
+    color: black;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body_hide {
+    opacity: 0;
+    transition: .9s opacity ease-in-out;
+}
+.body_visible {
+    opacity: 1;
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgb(123,132,121, 0.9);
+    margin-left: -1%;
+    width: 101%;
+    height: 4vh;
+    padding: 1%;
+}
+
+.menu-button__home{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__friends{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__cinema{
+    background: rgb(87,103,102, 0.65);
+}
+
+.menu-button__memes{
+    background: rgb(87,103,102, 0.65);
+}
+
+.friends-header{
+    font-size: 2rem;
+    margin-top: 10vh;
+    align-self: center;
+}
+
+.main-donkey{
+    margin-top: 5vh;
+}
+
+.main-donkey__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 48.5%;
+    margin-right: 50%;
+    padding: 1%;
+}
+
+.main-donkey__image{
+    margin-top: 1vh;
+    margin-left: 27%;
+    margin-right: 10%;
+    width: 50%;
+    height: auto;
+}
+
+.main-donkey__text{
+    background: rgb(123,132,121, 0.6);
+    width: 30%;
+    margin-left: 35%;
+    padding: 1%;
+}
+
+.main-cat{
+    margin-top: 10vh;
+}
+
+.main-cat__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 45%;
+    padding: 1%;
+}
+
+.main-cat__image{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 2vh;
+}
+
+.main-cat__text{
+    background: rgb(123,132,121, 0.6);
+    width: 30%;
+    margin-left: 35%;
+    padding: 1%;
+}
+
+.main-pryanya{
+    margin-top: 10vh;
+}
+
+.main-prynya__header{
+    font-size: 1.5rem;
+    background: rgb(123,132,121, 0.6);
+    margin-left: 47%;
+    padding: 1%;
+}
+
+.main-pryanya__image{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 2vh;
+}
+
+.main-pryanya__text{
+    background: rgb(123,132,121, 0.6);
+    width: 30%;
+    margin-left: 35%;
+    padding: 1%;
+    margin-bottom: 10vh;
+}

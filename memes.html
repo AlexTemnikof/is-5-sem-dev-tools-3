@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title class="head__title">Шречье резюме</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/memes.css">
+    <!-- You need a yandex api key to use this feature -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script defer src="scripts/buttons.js"></script>
+    <script defer src="scripts/pages.js"></script>
+    <script defer src="scripts/active_button.js"></script>
+</head>
+<body class="memes body_visible">
+    <header class="header">
+        <div class="menu">
+            <button class="menu-button__home" onclick="home()">Home</button>
+            <button class="menu-button__friends" onclick="friends()">My friends</button>
+            <button class="menu-button__cinema" onclick="cinema()">Me in Hollywood</button>
+            <button class="menu-button__memes" onclick="memes()">Memes about me</button>
+        </div>
+        <div class="header-memes">Абчихба смешнявки.</div>
+    </header>
+
+    <main>
+        <section class="main-first-meme">
+            <span class="main-first-meme__header">Первая смешнявка</span>
+            <img class="main-first-meme__img" src="images/shrekmem1.jpg">
+        </section>
+
+        <section class="main-second-meme">
+            <span class="main-second-meme__header">Вторая смешнявка</span>
+            <img class="main-second-meme__img" src="images/shrekmem2.jpg">
+        </section>
+
+        <section class="main-third-meme">
+            <span class="main-third-meme__header">Третья мешнявка</span>
+            <img class="main-third-meme__img" src="images/shrekmem3.jpg">
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
