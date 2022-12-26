@@ -1,5 +1,6 @@
-//todo: make faden appearance
-
+/**
+ * @description Данный скрипт отвечает за переход с одной страницы на другую.
+ */
 function home(){
     location.href = "resume.html";
 }

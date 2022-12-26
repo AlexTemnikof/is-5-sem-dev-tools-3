@@ -1,7 +1,17 @@
+/**
+ *@description Данный скрипт отвечает за события наведения мыши и нажатия на кнопку
+ */
+
+
 const Btn = document.querySelectorAll('button')
 
 addButtonHandlers(Btn);
 
+/**
+ *
+ * @param btn - кнопка
+ * @description Добавление обработчика событий наведения и нажатия на кнопку
+ */
 function addButtonHandlers(btn){
 
     for(let i = 0; i < btn.length; i++) {
